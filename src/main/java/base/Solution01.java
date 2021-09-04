@@ -15,7 +15,8 @@ public class Solution01 {
     /*
         program start
         print "What is your name?" and store input into 'name'
-        print "Hello, 'name', nice to meet you!"
+        string 'greeting' = "Hello, 'name', nice to meet you!"
+        print(greeting)
      */
 
     public static void main(String[] args)
@@ -27,8 +28,11 @@ public class Solution01 {
         Scanner input = new Scanner(System.in);
         String name = input.nextLine();
 
+        //string concatenation
+        String greeting = "Hello, " + name + ", nice to meet you!";
+
         //display greeting
-        System.out.print("Hello, " + name + ", nice to meet you!\n");
+        System.out.print(greeting);
 
     }
 
