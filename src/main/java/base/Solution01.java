@@ -14,21 +14,21 @@ import java.util.Scanner;
 public class Solution01 {
     /*
         program start
-        print "Enter name" and store into 'name'
-        print "Hello there 'name'"
+        print "What is your name?" and store input into 'name'
+        print "Hello, 'name', nice to meet you!"
      */
 
     public static void main(String[] args)
     {
         //prompt user to enter name
-        System.out.print("Please enter your name: ");
+        System.out.print("What is your name? ");
 
         //store user input as variable 'name'
         Scanner input = new Scanner(System.in);
         String name = input.nextLine();
 
         //display greeting
-        System.out.print("\nHello there " + name + "!\n");
+        System.out.print("Hello, " + name + ", nice to meet you!\n");
 
     }
 
